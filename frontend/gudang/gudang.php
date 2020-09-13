@@ -43,7 +43,7 @@
   </div>
   <div class="d-flex justify-content-end align-items-center">
         <p class="mr-4 text-white">Hello, <?php echo $_SESSION['username']; ?></p>
-        <a href="../../../backend/logout.php">
+        <a href="../../backend/logout.php">
             <button type="button" class="btn btn-danger"><i class="material-icons">logout</i></button>
         </a>
   </div>
@@ -115,7 +115,7 @@
                     </th>
                     <th scope="col">Lokasi</th>
                     <th scope="col">Kapasitas</th>
-                    <th class="col d-flex align-items-center justify-content-end pb-4">Total : <?php echo $gudang_total ?></th>
+                    <th class="col d-flex align-items-center justify-content-end pb-4">Total : <?php echo $gudang_total ?><br />Kapasitas Tersedia: <?php echo ($gudang_total - $mutasi_masuk_total); ?></th>
                 </tr>
             </thead>
             <tbody>

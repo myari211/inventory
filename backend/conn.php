@@ -25,4 +25,13 @@
     $mutasi_keluar_show = "SELECT *, mutasi_keluar.id AS toto FROM mutasi_keluar, gudang, barang WHERE mutasi_keluar.id_barang = barang.id AND mutasi_keluar.id_gudang = gudang.id";
     $mutasi_keluar = mysqli_query($conn, $mutasi_keluar_show);
 
+    $keluar = "SELECT SUM(mutasi) FROM mutasi_keluar";
+    $mutasi_keluar_total = mysqli_query($conn, $keluar);
+    $mutasi_keluar_total = mysqli_fetch_row($mutasi_keluar_total);
+    $mutasi_keluar_total = $mutasi_keluar_total[0];
+
+    $masuk = "SELECT SUM(mutasi) FROM mutasi_masuk";
+    $mutasi_masuk_total = mysqli_query($conn, $masuk);
+    $mutasi_masuk_total = mysqli_fetch_row($mutasi_masuk_total);
+    $mutasi_masuk_total = ($mutasi_masuk_total[0] - $mutasi_keluar_total[0]);
 ?>

@@ -118,7 +118,7 @@ if (!isset($_SESSION['username'])){
                 <th scope="col">Gudang</th>
                 <th scope="col">Nama Barang</th>
                 <th scope="col">Mutasi</th>
-                <th class="col d-flex align-items-center justify-content-end pb-4">Total : <?php echo $gudang_total ?></th>
+                <th class="col d-flex align-items-center justify-content-end pb-4">Total : <?php echo $mutasi_masuk_total ?></th>
             </tr>
         </thead>
         <tbody>

@@ -44,7 +44,7 @@
   </div>
   <div class="d-flex justify-content-end align-items-center">
         <p class="mr-4 text-white">Hello, <?php echo $_SESSION['username']; ?></p>
-        <a href="../../../backend/logout.php">
+        <a href="../../backend/logout.php">
             <button type="button" class="btn btn-danger"><i class="material-icons">logout</i></button>
         </a>
   </div>
