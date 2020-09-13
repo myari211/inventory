@@ -41,45 +41,66 @@
       
     </ul>
   </div>
+  <div class="d-flex justify-content-end align-items-center">
+        <p class="mr-4 text-white">Hello, <?php echo $_SESSION['username']; ?></p>
+        <a href="../../../backend/logout.php">
+            <button type="button" class="btn btn-danger"><i class="material-icons">logout</i></button>
+        </a>
+  </div>
 </nav>
 
 
 <div class="row" id="body-row">
     <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
         <ul class="list-group">
-            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
-                <small>MAIN MENU</small>
-            </li>
             <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-dashboard fa-fw mr-3"></span>
+                <div class="d-flex w-100 justify-content-between align-items-center">
                     <span class="menu-collapsed">Gudang</span>
-                    <span class="submenu-icon ml-auto"></span>
+                    <i class="material-icons">keyboard_arrow_down</i>
                 </div>
             </a>
             <div id='submenu1' class="collapse sidebar-submenu">
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="../../gudang/gudang.php" class="list-group-item list-group-item-action bg-dark text-white d-flex justify-content-between align-items-center">
                     <span class="menu-collapsed">Daftar Gudang</span>
+                    <i class="material-icons" style="font-size:15px;">home_work</i>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="../../gudang/tambah_gudang.php" class="list-group-item list-group-item-action bg-dark text-white d-inline-flex justify-content-between">
                     <span class="menu-collapsed">Tambah Gudang</span>
+                    <i class="material-icons" style="font-size:15px;">add_circle</i>
                 </a>
             </div>
             <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-user fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Profile</span>
-                    <span class="submenu-icon ml-auto"></span>
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                    <span class="menu-collapsed">Barang</span>
+                    <i class="material-icons">keyboard_arrow_down</i>
                 </div>
             </a>
             <div id='submenu2' class="collapse sidebar-submenu">
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Settings</span>
+                <a href="../../barang/barang.php" class="list-group-item list-group-item-action bg-dark text-white d-inline-flex justify-content-between">
+                    <span class="menu-collapsed">Daftar Barang</span>
+                    <i class="material-icons" style="font-size:15px;">layers</i>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Password</span>
+                <a href="../../barang/tambah_barang.php" class="list-group-item list-group-item-action bg-dark text-white d-inline-flex justify-content-between">
+                    <span class="menu-collapsed">Tambah Barang</span>
+                    <i class="material-icons" style="font-size:15px;">add_circle</i>
                 </a>
-            </div>            
+            </div>
+            <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between align-items-center">
+                    <span class="menu-collapsed">Mutasi</span>
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </div>
+            </a>
+            <div id='submenu3' class="collapse sidebar-submenu">
+                <a href="mutasi_masuk.php" class="list-group-item list-group-item-action bg-dark text-white d-inline-flex justify-content-between">
+                    <span class="menu-collapsed">Mutasi Masuk</span>
+                    <i class="material-icons" style="font-size:15px;">vertical_align_bottom</i>
+                </a>
+                <a href="../keluar/mutasi_keluar.php" class="list-group-item list-group-item-action bg-dark text-white d-inline-flex justify-content-between">
+                    <span class="menu-collapsed">Mutasi Keluar</span>
+                    <i class="material-icons" style="font-size:15px;">vertical_align_top</i>
+                </a>
+            </div>               
            
         </ul>
     </div> <!-- End Sidebar -->
