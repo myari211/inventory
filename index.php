@@ -1,1 +1,1 @@
-<?php include_once("/frontend/barang/barang.php"); ?>
+<?php require('/frontend/login.php'); ?>
