@@ -1,1 +1,1 @@
-<?php require('/frontend/login.php'); ?>
+<?php header('/frontend/login.php'); ?>
